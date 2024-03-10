@@ -8,3 +8,7 @@ def index(request):
         'content': 'Home page'
     }
     return render(request, 'main/index.html', context)
+
+
+def about(request):
+    return HttpResponse('About')
